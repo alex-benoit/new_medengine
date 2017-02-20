@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .secondary-banner h2 {
   text-transform: uppercase;
   font-weight: 600;
@@ -15,6 +16,7 @@
   margin-bottom: 20px;
   color: rgb(61, 67, 81);
 }
+
 .secondary-banner h2::after {
   content: "";
   position: absolute;
@@ -25,6 +27,7 @@
   bottom: -10px;
   transform: translateX(-50%);
 }
+
 .secondary-banner p {
   color: rgba(28, 54, 83, 0.6);
 }
