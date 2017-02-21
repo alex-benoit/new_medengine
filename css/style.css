@@ -1,4 +1,5 @@
 @import 'components/navbar.css';
 @import 'components/typography.css';
 @import 'components/main-banner.css';
-@import 'components/secondary-banner.css';
+@import 'components/banner.css';
+@import 'components/feature.css';

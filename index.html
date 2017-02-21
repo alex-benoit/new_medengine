@@ -22,11 +22,11 @@
   <meta property="profile:last_name" content=""> -->
 
   <!-- Font -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/vendor/animate.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -54,7 +54,7 @@
   <!-- NAVBAR -->
   <div class="navbar-fixed" id="navbar">
     <!-- Navigation on Desktop -->
-    <div class="navbar-container hidden-xs-down">
+    <div class="navbar-container hidden-xs">
       <ul class="navigation">
         <li><a id="toAbout" href="#about">about</a></li>
         <li><a id="toInnovation" href="#innovation">innovation</a></li>
@@ -63,7 +63,7 @@
       </ul>
     </div>
     <!-- Navigation on Mobile -->
-    <div class="container take-width hidden-sm-up">
+    <div class="container take-width hidden-sm hidden-md hidden-lg">
       <div class="dropdown">
         <i onclick="openMenu()" class="fa fa-bars fa-lg dropbtn"></i>
         <div id="dropdown" class="dropdown-content">
@@ -77,23 +77,58 @@
   </div>
 
   <!-- MAIN BANNER -->
-  <div class="main-banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/main-banner.jpg');">
+  <div class="main-banner">
     <div class="banner-content">
-      <img src="images/wave.png" alt="MedEngine Logo">
+      <img src="images/logos/wave.png" alt="MedEngine Logo">
       <h1>Welcome to MedEngine</h1>
       <p>Putting the power of AI into the patient’s hands.</p>
       <a class="btn btn-primary">Sign Up</a>
-      <a class="btn btn-secondary">More Info <i class="fa fa-chevron-down"></i></a>
+      <a class="btn btn-success">More Info <i class="fa fa-chevron-down"></i></a>
     </div>
   </div>
 
-  <!-- SECONDARY BANNER -->
-  <div class="secondary-banner">
+  <!-- ABOUT BANNER -->
+  <div class="secondary-banner" id="about">
     <div class="banner-content">
-      <div class="container">
+      <div class="container text-center">
         <h2>About US</h2>
         <p>IoT based symptom-tracking service, which allows for perfectly tailored treatment plans of the Parkinson's Disease (PD). We enable next generation clinical trials and offer outstanding scientifically and commercially utilisable data. We present to you our product TremotTab.</p>
+      </div>
+    </div>
+  </div>
 
+  <!-- INNOVATION BANNER -->
+  <div class="secondary-banner bg-grey" id="innovation">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 text-center">
+          <img src="/images/screenshots/duo.png" alt="MedEngine Screenshot" style="height: 500px">
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <h2>Innovation</h2>
+          <p>Using Big Data to revolutionise Personalised Healthcare.</p>
+          <div class="feature">
+            <img src="/icons/feature.png" alt="">
+            <div class="feature-text">
+              <h4>Shareable Data</h4>
+              <p>Let's tackle Parkinson's Together.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <img src="/icons/feature.png" alt="">
+            <div class="feature-text">
+              <h4>User Centric Design</h4>
+              <p>Focusing on the Patient.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <img src="/icons/feature.png" alt="">
+            <div class="feature-text">
+              <h4>Powerful AI</h4>
+              <p>State of the art Neural Networks.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

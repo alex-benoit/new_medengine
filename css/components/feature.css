@@ -1,0 +1,22 @@
+.feature {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #E6E9EA;
+  padding: 20px 0;
+}
+
+.feature:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.feature-text {
+  padding-left: 20px;
+}
+
+.feature-text h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 17px;
+  color: rgb(61, 67, 81);
+}
