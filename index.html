@@ -3,7 +3,7 @@
 <head>
   <!-- Header Data -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>MedEngine | The Personalised Healthcare AI</title>
   <meta name="description" content="">
 
@@ -26,7 +26,7 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/vendor/animate.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -54,16 +54,16 @@
   <!-- NAVBAR -->
   <div class="navbar-fixed" id="navbar">
     <!-- Navigation on Desktop -->
-    <div class="navbar-container hidden-xs">
+    <div class="navbar-container hidden-xs-down">
       <ul class="navigation">
         <li><a id="toAbout" href="#about">about</a></li>
         <li><a id="toInnovation" href="#innovation">innovation</a></li>
-        <li><a id="toSimplicity" href="#simplicity">work</a></li>
+        <li><a id="toSimplicity" href="#simplicity">simplicity</a></li>
         <li><a id="toContact" href="#technology">technology</a></li>
       </ul>
     </div>
     <!-- Navigation on Mobile -->
-    <div class="container take-width hidden-sm hidden-md hidden-lg">
+    <div class="container take-width hidden-sm-up">
       <div class="dropdown">
         <i onclick="openMenu()" class="fa fa-bars fa-lg dropbtn"></i>
         <div id="dropdown" class="dropdown-content">
@@ -82,8 +82,8 @@
       <img src="images/logos/wave.png" alt="MedEngine Logo">
       <h1>Welcome to MedEngine</h1>
       <p>Putting the power of AI into the patient’s hands.</p>
-      <a class="btn btn-primary">Sign Up</a>
-      <a class="btn btn-success">More Info <i class="fa fa-chevron-down"></i></a>
+      <a href="#" class="btn btn-primary">Sign Up</a>
+      <a href="#" class="btn btn-secondary">More Info <i class="fa fa-chevron-down"></i></a>
     </div>
   </div>
 
@@ -100,9 +100,9 @@
   <!-- INNOVATION BANNER -->
   <div class="secondary-banner bg-grey" id="innovation">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-xs-12 col-md-6 text-center">
-          <img src="/images/screenshots/duo.png" alt="MedEngine Screenshot" style="height: 500px">
+          <img src="/images/screenshots/duo.png" alt="MedEngine Screenshots" id="duo">
         </div>
         <div class="col-xs-12 col-md-6">
           <h2>Innovation</h2>
@@ -128,6 +128,38 @@
               <p>State of the art Neural Networks.</p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INNOVATION BANNER -->
+  <div class="secondary-banner" id="simplicity">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xs-12 col-md-6">
+          <h2>Simplicity</h2>
+          <p>As a Parkinson's patient, we believe you should not burden yourself with unneccesary features. We do not believe in producing yet another healthcare gadget. Our device is the most elegantly designed and easy to use medical device you will ever encounter.</p>
+          <a href="#" class="btn btn-primary">Specifications</a>
+        </div>
+        <div class="col-xs-12 col-md-6 text-center">
+          <img src="/images/renderings/wristband.png" alt="MedEngine Wristband">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TECHNOLOGY BANNER -->
+  <div class="secondary-banner" id="technology">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h2>Technology</h2>
+          <p>As a Parkinson's patient, we believe you should not burden yourself with unneccesary features. We do not believe in producing yet another healthcare gadget. Our device is the most elegantly designed and easy to use medical device you will ever encounter.</p>
+          <p>
+            <a href="#" class="btn btn-primary">Specifications</a>
+          </p>
+          <img src="/images/renderings/pcb.png" alt="MedEngine PCB">
         </div>
       </div>
     </div>
