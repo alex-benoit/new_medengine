@@ -151,7 +151,7 @@
     transform: translateY(0%);
   }
   50% {
-    transform: translateY(15%);
+    transform: translateY(3%);
   }
   100% {
     transform: translateY(0%);
@@ -163,7 +163,7 @@
     -webkit-transform: translateY(0%);
   }
   50% {
-    -webkit-transform: translateY(15%);
+    -webkit-transform: translateY(3%);
   }
   100% {
     -webkit-transform: translateY(0%);

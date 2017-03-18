@@ -30,6 +30,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Javascript -->
+  <script src="js/vendor/jquery-3.1.0.js"></script>
+  <script src="js/application.js"></script>
+
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
@@ -52,10 +56,15 @@
 <body>
 
   <!-- NAVBAR -->
-  <div class="navbar-fixed" id="navbar">
+  <nav class="navbar-fixed" id="navbar">
     <!-- Navigation on Desktop -->
-    <div class="navbar-container hidden-xs-down">
+    <div class="navbar-container hidden-sm-down">
       <ul class="navigation">
+        <li><a id="home" href="/">
+          <img src="images/logos/wave-white.png" alt="">
+          <span>MedEngine</span>
+        </a></li>
+        <li id="spacing"></li>
         <li><a id="toAbout" href="#about">about</a></li>
         <li><a id="toInnovation" href="#innovation">innovation</a></li>
         <li><a id="toSimplicity" href="#simplicity">simplicity</a></li>
@@ -63,7 +72,7 @@
       </ul>
     </div>
     <!-- Navigation on Mobile -->
-    <div class="container take-width hidden-sm-up">
+    <div class="container take-width hidden-md-up">
       <div class="dropdown">
         <i onclick="openMenu()" class="fa fa-bars fa-lg dropbtn"></i>
         <div id="dropdown" class="dropdown-content">
@@ -74,17 +83,24 @@
         </div>
       </div>
     </div>
-  </div>
+  </nav>
 
   <!-- MAIN BANNER -->
-  <div class="main-banner">
-    <div class="banner-content">
-      <img src="images/logos/wave.png" alt="MedEngine Logo">
-      <h1>Welcome to MedEngine</h1>
-      <p>Putting the power of AI into the patient’s hands.</p>
-      <a href="#" class="btn btn-primary">Sign Up</a>
-      <a href="#" class="btn btn-secondary">More Info <i class="fa fa-chevron-down"></i></a>
+  <div class="canvas-container">
+    <div class="main-banner container">
+      <div class="row align-items-center">
+        <div class="col text-center">
+          <img class="slideDown" src="images/logos/wave-white.png" alt="MedEngine Logo">
+        </div>
+        <div class="col">
+          <h1 class="slideDown">Welcome to MedEngine</h1>
+          <p class="slideDown">Putting the power of AI into the patient’s hands.</p>
+          <a href="#" class="button slideDown">Sign Up</a>
+          <a href="#" class="button-secondary slideDown">More Info <i class="fa fa-chevron-down"></i></a>
+        </div>
+      </div>
     </div>
+    <canvas width="1000" height="180" id="graph"></canvas>
   </div>
 
   <!-- ABOUT BANNER -->
@@ -102,7 +118,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-xs-12 col-md-6 text-center">
-          <img src="/images/screenshots/duo.png" alt="MedEngine Screenshots" id="duo">
+          <img src="/images/screenshots/duo.png" alt="MedEngine Screenshots" id="duo" class="floating">
         </div>
         <div class="col-xs-12 col-md-6">
           <h2>Innovation</h2>
@@ -133,17 +149,17 @@
     </div>
   </div>
 
-  <!-- INNOVATION BANNER -->
+  <!-- SIMPLICITY BANNER -->
   <div class="secondary-banner" id="simplicity">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-xs-12 col-md-6">
           <h2>Simplicity</h2>
           <p>As a Parkinson's patient, we believe you should not burden yourself with unneccesary features. We do not believe in producing yet another healthcare gadget. Our device is the most elegantly designed and easy to use medical device you will ever encounter.</p>
-          <a href="#" class="btn btn-primary">Specifications</a>
+          <a href="#" class="button">Specifications</a>
         </div>
         <div class="col-xs-12 col-md-6 text-center">
-          <img src="/images/renderings/wristband.png" alt="MedEngine Wristband">
+          <img src="/images/renderings/wristband.png" alt="MedEngine Wristband" class="floating">
         </div>
       </div>
     </div>
@@ -157,15 +173,12 @@
           <h2>Technology</h2>
           <p>As a Parkinson's patient, we believe you should not burden yourself with unneccesary features. We do not believe in producing yet another healthcare gadget. Our device is the most elegantly designed and easy to use medical device you will ever encounter.</p>
           <p>
-            <a href="#" class="btn btn-primary">Specifications</a>
+            <a href="#" class="button">Specifications</a>
           </p>
           <img src="/images/renderings/pcb.png" alt="MedEngine PCB">
         </div>
       </div>
     </div>
   </div>
-
-  <script src="js/vendor/jquery-3.1.0.js"></script>
-  <script src="js/application.js"></script>
 </body>
 </html>

@@ -22,7 +22,7 @@
 .secondary-banner h2::after {
   content: "";
   position: absolute;
-  background: rgb(243, 156, 18);
+  background: #FF3E70;
   width: 100px;
   height: 1px;
   bottom: -10px;

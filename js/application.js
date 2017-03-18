@@ -6,23 +6,23 @@ $(document).ready(function(){
   var $navbar = $('#navbar');
   var st = $(this).scrollTop();
   if ( st <= startFade ) {
-    $navbar.css({ 'background' : 'rgba(29,45,76,0.0)' });
+    $navbar.css({ 'background' : 'rgba(28, 84, 156, 0.0)' });
   } else if ( st > startFade && st < endFade ) {
     var transparancy = ((st/endFade - startFade/endFade) / (1 - startFade/endFade));
-    $navbar.css({ 'background' : `rgba(29,45,76,${transparancy})` });
+    $navbar.css({ 'background' : `rgba(28, 84, 156, ${transparancy})` });
   } else {
-    $navbar.css({ 'background' : 'rgba(29,45,76,1)' });
+    $navbar.css({ 'background' : 'rgba(28, 84, 156, 1)' });
   }
 
   $(window).on('scroll', function() {
     var st = $(this).scrollTop();
     if ( st <= startFade ) {
-      $navbar.css({ 'background' : 'rgba(29,45,76,0.0)' });
+      $navbar.css({ 'background' : 'rgba(28, 84, 156, 0.0)' });
     } else if ( st > startFade && st < endFade ) {
       var transparancy = ((st/endFade - startFade/endFade) / (1 - startFade/endFade));
-      $navbar.css({ 'background' : `rgba(29,45,76,${transparancy})` });
+      $navbar.css({ 'background' : `rgba(28, 84, 156, ${transparancy})` });
     } else {
-      $navbar.css({ 'background' : 'rgba(29,45,76,1)' });
+      $navbar.css({ 'background' : 'rgba(28, 84, 156, 1)' });
     }
   });
 });
@@ -35,6 +35,7 @@ $(document).ready(function(){
     $("html, body").animate({scrollTop: targetOffset}, 500);
   });
 
+  // TODO
   $('#navbar').on('click', '#toResume', function() {
     event.preventDefault();
     var targetOffset = $('#resume').offset().top - 70;
@@ -71,7 +72,7 @@ function openMenu() {
   document.getElementById("dropdown").classList.toggle("show");
 }
 
-$(document).ready(function(){
+$(function(){
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
 
@@ -85,4 +86,36 @@ $(document).ready(function(){
       }
     }
   };
+});
+
+// CANVAS MAIN PAGE
+function loadGraph(){
+  var pageWidth = $(document).width();;
+  var a_canvas = document.getElementById("graph");
+  var context = a_canvas.getContext("2d");
+  context.canvas.width = pageWidth;
+  drawGraph(0, context);
+  drawGraph(0.05, context);
+  drawGraph(0.1, context);
+}
+
+function drawGraph(offset, context){
+  var width = context.canvas.clientWidth;
+  var height = context.canvas.clientHeight;
+  context.beginPath();
+  context.moveTo(0,height);
+  context.lineTo(0,0);
+  context.lineTo((width*.2)+(offset*width),height*Math.random());
+  context.lineTo((width*.4)+(offset*width),height*Math.random());
+  context.lineTo((width*.6)+(offset*width),height*Math.random());
+  context.lineTo((width*.8)+(offset*width),height*Math.random());
+  context.lineTo(width,height*Math.random());
+  context.lineTo(width,height);
+  context.fillStyle = "rgba(255, 255, 255, 0.2)";
+  context.closePath();
+  context.fill();
+}
+
+$(function(){
+  loadGraph();
 });
