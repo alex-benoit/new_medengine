@@ -39,7 +39,7 @@
   margin-top: 12px;
 }
 
-/* Specific typography secondary banner */
+/* Specific typography ABOUT banner */
 .secondary-banner#about h2 {
   color: rgb(61, 67, 81);
 }
@@ -53,6 +53,7 @@
   color: rgba(28, 54, 83, 0.6);
 }
 
+/* Specific typography INNOVATION banner */
 .secondary-banner#innovation h2 {
   color: rgb(61, 67, 81);
 }
@@ -65,6 +66,7 @@
   color: rgba(28, 54, 83, 0.6);
 }
 
+/* Specific typography SIMPLICITY banner */
 .secondary-banner#simplicity h2 {
   color: rgb(61, 67, 81);
 }
@@ -77,6 +79,7 @@
   color: rgba(28, 54, 83, 0.6);
 }
 
+/* Specific typography TECHNOLOGY banner */
 .secondary-banner#technology h2 {
   color: white;
 }
@@ -88,6 +91,48 @@
 
 .secondary-banner#technology p {
   color: rgba(220, 220, 220, 0.8);
+}
+
+/* Specific typography FEATURES banner */
+.secondary-banner#features h2 {
+  color: rgb(61, 67, 81);
+}
+
+.secondary-banner#features h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.secondary-banner#features p {
+  color: rgba(28, 54, 83, 0.6);
+}
+
+/* Specific typography TEAM banner */
+.secondary-banner#team h2 {
+  color: rgb(61, 67, 81);
+}
+
+.secondary-banner#team h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.secondary-banner#team p {
+  color: rgba(28, 54, 83, 0.6);
+}
+
+/* Specific typography SIGNUP banner */
+.secondary-banner#singup h2 {
+  color: rgb(61, 67, 81);
+}
+
+.secondary-banner#singup h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.secondary-banner#singup p {
+  color: rgba(28, 54, 83, 0.6);
 }
 
 /* Images */
