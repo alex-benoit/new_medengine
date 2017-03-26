@@ -25,7 +25,6 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/vendor/animate.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -35,28 +34,28 @@
   <script src="js/application.js"></script>
 
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-  <link rel="manifest" href="icons/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icons/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicons/favicon-16x16.png">
+  <link rel="manifest" href="icons/favicons/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="icons/favicons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar-fixed" id="navbar">
+  <nav class="navbar-fixed" id="navbar" style="display:none">
     <!-- Navigation on Desktop -->
     <div class="navbar-container hidden-sm-down">
       <ul class="navigation">
@@ -86,7 +85,7 @@
   </nav>
 
   <!-- MAIN BANNER -->
-  <div class="canvas-container">
+  <section class="canvas-container">
     <div class="main-banner container">
       <div class="row align-items-center">
         <div class="col text-center">
@@ -101,44 +100,44 @@
       </div>
     </div>
     <canvas width="1000" height="180" id="graph"></canvas>
-  </div>
+  </section>
 
   <!-- ABOUT BANNER -->
-  <div class="secondary-banner" id="about">
+  <section class="secondary-banner" id="about">
     <div class="banner-content">
       <div class="container text-center">
-        <h2>About US</h2>
+        <h2>About Us</h2>
         <p>IoT based symptom-tracking service, which allows for perfectly tailored treatment plans of the Parkinson's Disease (PD). We enable next generation clinical trials and offer outstanding scientifically and commercially utilisable data. We present to you our product TremotTab.</p>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- INNOVATION BANNER -->
-  <div class="secondary-banner bg-grey" id="innovation">
+  <section class="secondary-banner bg-grey" id="innovation">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-xs-12 col-md-6 text-center">
-          <img src="/images/screenshots/duo.png" alt="MedEngine Screenshots" id="duo" class="floating">
+          <img src="images/screenshots/duo.png" alt="MedEngine Screenshots" id="duo" class="floating">
         </div>
         <div class="col-xs-12 col-md-6">
           <h2>Innovation</h2>
           <p>Using Big Data to revolutionise Personalised Healthcare.</p>
           <div class="feature">
-            <img src="/icons/feature.png" alt="">
+            <span data-icon="&#xe03e;" class="icon"></span>
             <div class="feature-text">
               <h4>Shareable Data</h4>
               <p>Let's tackle Parkinson's Together.</p>
             </div>
           </div>
           <div class="feature">
-            <img src="/icons/feature.png" alt="">
+            <span data-icon="&#xe040;" class="icon"></span>
             <div class="feature-text">
               <h4>User Centric Design</h4>
               <p>Focusing on the Patient.</p>
             </div>
           </div>
           <div class="feature">
-            <img src="/icons/feature.png" alt="">
+            <span data-icon="&#xe03c;" class="icon"></span>
             <div class="feature-text">
               <h4>Powerful AI</h4>
               <p>State of the art Neural Networks.</p>
@@ -147,10 +146,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- SIMPLICITY BANNER -->
-  <div class="secondary-banner" id="simplicity">
+  <section class="secondary-banner" id="simplicity">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-xs-12 col-md-6">
@@ -159,14 +158,14 @@
           <a href="#" class="button">Specifications</a>
         </div>
         <div class="col-xs-12 col-md-6 text-center">
-          <img src="/images/renderings/wristband.png" alt="MedEngine Wristband" class="floating">
+          <img src="images/renderings/wristband.png" alt="MedEngine Wristband" class="floating">
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- TECHNOLOGY BANNER -->
-  <div class="secondary-banner" id="technology">
+  <section class="secondary-banner" id="technology">
     <div class="container">
       <div class="row text-center">
         <div class="col">
@@ -175,10 +174,45 @@
           <p>
             <a href="#" class="button">Order Now</a>
           </p>
-          <img src="/images/renderings/pcb.png" alt="MedEngine PCB" class="floating">
+          <img src="images/renderings/pcb.png" alt="MedEngine PCB" class="floating">
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- FEATURES BANNER -->
+  <section class="secondary-banner" id="features">
+    <div class="banner-content">
+      <div class="container text-center">
+        <h2>Features</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM BANNER -->
+  <section class="secondary-banner" id="team">
+    <div class="banner-content">
+      <div class="container text-center">
+        <h2>Team</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNUP BANNER -->
+  <section class="secondary-banner" id="signup">
+    <div class="banner-content">
+      <div class="container text-center">
+        <h2>Create your MedEngine Account</h2>
+        <p>Get access to our astonishing medical data analytics platform.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOOTER -->
+  <footer>
+    <div class="footer-container">
+      <p>This is a footer</p>
+    </div>
+  </footer>
 </body>
 </html>

@@ -24,3 +24,8 @@
 .feature-text p {
   margin-bottom: 0;
 }
+
+#innovation span {
+  font-size: 35px;
+  color: #FF3E70;
+}
