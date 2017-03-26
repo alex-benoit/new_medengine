@@ -1,14 +1,14 @@
 // NAVBAR DESIGN
 $(function(){
   $(window).scroll(function(e){
-    if ($(this).scrollTop() > $(window).height() - 70) {
+    if ($(this).scrollTop() > $(window).height() - 90) {
       $('#navbar:hidden').slideDown();
     } else {
       $('#navbar:visible').slideUp();
     }
   });
 
-  if ($(this).scrollTop() > $(window).height() - 70) {
+  if ($(this).scrollTop() > $(window).height() - 90) {
     $('#navbar:hidden').slideDown();
   } else {
     $('#navbar:visible').slideUp();
