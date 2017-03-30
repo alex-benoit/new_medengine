@@ -1,0 +1,87 @@
+#signup .signup-form .sign-up-btn {
+  padding: 15px 0;
+  border-radius: 3px;
+  border: solid 1px #FF3E70;
+  width: 80%;
+  font-size: 13px;
+}
+
+#signup .signup-form .form-input-group {
+  width: 80%;
+  height: 55px;
+  margin: 0 auto 10px;
+  border-radius: 5px;
+  border: solid 1px #E6E9EA;
+  text-align: left;
+  position: relative;
+}
+
+#signup .signup-form .form-input-group i {
+  color: #FF3E70;
+  font-size: 14px;
+}
+
+#signup .signup-form .form-input-group i:after {
+  content: "";
+  height: 30px;
+  width: 1px;
+  border-right: solid 1px #E6E9EA;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#signup .signup-form .form-input-group i.fa-lock {
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: 20px;
+}
+
+#signup .signup-form .form-input-group i.fa-envelope {
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: 20px;
+}
+
+#signup .signup-form .form-input-group input {
+  padding-left: 68px;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  border: none;
+}
+
+#signup .signup-form .form-input-group input:focus {
+  outline-color: #FF3E70;
+}
+
+#signup .signup-form .form-input-group input::-webkit-input-placeholder {
+  font-family: "Raleway", "Helvetica", "sans-serif";
+  color: #BCC1C3;
+}
+
+#signup .signup-form .form-input-group input:-moz-placeholder {
+  font-family: "Raleway", "Helvetica", "sans-serif";
+  color: #BCC1C3;
+}
+
+#signup .signup-form .form-input-group input::-moz-placeholder {
+  font-family: "Raleway", "Helvetica", "sans-serif";
+  color: #BCC1C3;
+}
+
+#signup .signup-form .form-input-group input:-ms-input-placeholder {
+  font-family: "Raleway", "Helvetica", "sans-serif";
+  color: #BCC1C3;
+}

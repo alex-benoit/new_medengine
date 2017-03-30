@@ -25,6 +25,10 @@
   margin-bottom: 0;
 }
 
+.feature-header {
+  /* need hack to make iphone align vertically, prob flexbox column with grow on iphone */
+}
+
 #innovation span {
   font-size: 35px;
   color: #FF3E70;

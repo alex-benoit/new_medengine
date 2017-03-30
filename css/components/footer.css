@@ -1,7 +1,21 @@
+footer {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+  width: 100vw;
+  background-color: #3D4351;
+}
+
 .footer-container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 80%;
+}
+
+footer{
+  color: white;
 }

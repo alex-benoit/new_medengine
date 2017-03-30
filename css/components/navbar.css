@@ -1,5 +1,4 @@
 /*  === NAVBAR ===  */
-
 .navbar-fixed {
   display: flex;
   height: 90px;
@@ -9,7 +8,7 @@
   left: 0px;
   top: 0px;
   z-index: 3;
-  width: 100%;
+  width: 100vw;
   background-color: #3D4351;
 }
 
@@ -41,7 +40,7 @@
   align-items: center;
 }
 
-.navbar-container #home img {
+.navbar-fixed #home img {
   height: 35px;
   margin-right: 5px;
 }
@@ -60,8 +59,13 @@
 }
 
 /* Navbar on Mobile */
-.take-width {
-  width:100%;
+.navbar-mobile {
+  width: 100vw;
+}
+
+.navbar-mobile img {
+  height: 35px;
+  margin: 4px 0;
 }
 
 .dropbtn {

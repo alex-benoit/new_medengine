@@ -5,6 +5,7 @@ body {
 /* Links in the feature section */
 a p {
   transition: all 0.3s ease;
+  margin-bottom: 30px !important;
 }
 
 a:hover {

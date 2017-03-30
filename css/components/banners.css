@@ -1,8 +1,8 @@
 .secondary-banner {
   min-height: calc(100vh - 90px);
-  display: flex;
+/*  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
   padding: 35px 0;
 }
 
@@ -81,7 +81,7 @@
 
 /* Specific typography TECHNOLOGY banner */
 .secondary-banner#technology h2 {
-  color: white;
+  color: #F9F9F9;
 }
 
 .secondary-banner#technology h2::after {
@@ -109,7 +109,7 @@
 
 /* Specific typography TEAM banner */
 .secondary-banner#team h2 {
-  color: rgb(61, 67, 81);
+  color: #F9F9F9;
 }
 
 .secondary-banner#team h2::after {
@@ -117,21 +117,25 @@
   transform: translateX(-50%);
 }
 
+.secondary-banner#team h4 {
+  color: #F9F9F9;
+}
+
 .secondary-banner#team p {
-  color: rgba(28, 54, 83, 0.6);
+  color: rgba(220, 220, 220, 0.8);
 }
 
 /* Specific typography SIGNUP banner */
-.secondary-banner#singup h2 {
+.secondary-banner#signup h2 {
   color: rgb(61, 67, 81);
 }
 
-.secondary-banner#singup h2::after {
+.secondary-banner#signup h2::after {
   left: 50%;
   transform: translateX(-50%);
 }
 
-.secondary-banner#singup p {
+.secondary-banner#signup p {
   color: rgba(28, 54, 83, 0.6);
 }
 

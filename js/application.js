@@ -104,9 +104,15 @@ $(function(){
   };
 });
 
+// TEAM SLIDER
+$(function(){
+  $('.flexslider').flexslider({animation: "slide"});
+});
+
+
 // CANVAS MAIN PAGE
 function loadGraph(){
-  var pageWidth = $(document).width();;
+  var pageWidth = $(window).width();;
   var a_canvas = document.getElementById("graph");
   var context = a_canvas.getContext("2d");
   context.canvas.width = pageWidth;
