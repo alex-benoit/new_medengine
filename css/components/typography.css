@@ -1,3 +1,16 @@
 body {
   font-family: "Raleway", "Helvetica", "sans-serif"
 }
+
+/* Links in the feature section */
+a p {
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:hover p {
+  color: black !important;
+}
