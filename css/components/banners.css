@@ -1,8 +1,5 @@
 .secondary-banner {
   min-height: calc(100vh - 90px);
-/*  display: flex;
-  align-items: center;
-  justify-content: center;*/
   padding: 35px 0;
 }
 
@@ -40,102 +37,146 @@
 }
 
 /* Specific typography ABOUT banner */
-.secondary-banner#about h2 {
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about h2 {
   color: rgb(61, 67, 81);
 }
 
-.secondary-banner#about h2::after {
+#about h2::after {
   left: 50%;
   transform: translateX(-50%);
 }
 
-.secondary-banner#about p {
+#about p {
   color: rgba(28, 54, 83, 0.6);
 }
 
 /* Specific typography INNOVATION banner */
-.secondary-banner#innovation h2 {
+#innovation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#innovation h2 {
   color: rgb(61, 67, 81);
 }
 
-.secondary-banner#innovation h2::after {
+#innovation h2::after {
   left: 0;
 }
 
-.secondary-banner#innovation p {
+#innovation p {
   color: rgba(28, 54, 83, 0.6);
 }
 
 /* Specific typography SIMPLICITY banner */
-.secondary-banner#simplicity h2 {
+#simplicity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#simplicity h2 {
   color: rgb(61, 67, 81);
 }
 
-.secondary-banner#simplicity h2::after {
+#simplicity h2::after {
   left: 0;
 }
 
-.secondary-banner#simplicity p {
+#simplicity p {
   color: rgba(28, 54, 83, 0.6);
 }
 
 /* Specific typography TECHNOLOGY banner */
-.secondary-banner#technology h2 {
+#technology {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#technology h2 {
   color: #F9F9F9;
 }
 
-.secondary-banner#technology h2::after {
+#technology h2::after {
   left: 50%;
   transform: translateX(-50%);
 }
 
-.secondary-banner#technology p {
+#technology p {
   color: rgba(220, 220, 220, 0.8);
 }
 
 /* Specific typography FEATURES banner */
-.secondary-banner#features h2 {
+#features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#features h2 {
   color: rgb(61, 67, 81);
 }
 
-.secondary-banner#features h2::after {
+#features h2::after {
   left: 50%;
   transform: translateX(-50%);
 }
 
-.secondary-banner#features p {
+#features p {
   color: rgba(28, 54, 83, 0.6);
 }
 
 /* Specific typography TEAM banner */
-.secondary-banner#team h2 {
+#team {
+
+}
+
+#team h2 {
   color: #F9F9F9;
 }
 
-.secondary-banner#team h2::after {
+#team h2::after {
   left: 50%;
   transform: translateX(-50%);
 }
 
-.secondary-banner#team h4 {
+#team h4 {
   color: #F9F9F9;
 }
 
-.secondary-banner#team p {
+#team p {
   color: rgba(220, 220, 220, 0.8);
 }
 
+#team .team-containe {
+  height: ;
+}
+
 /* Specific typography SIGNUP banner */
-.secondary-banner#signup h2 {
+#signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#signup h2 {
   color: rgb(61, 67, 81);
 }
 
-.secondary-banner#signup h2::after {
+#signup h2::after {
   left: 50%;
   transform: translateX(-50%);
 }
 
-.secondary-banner#signup p {
+#signup p {
   color: rgba(28, 54, 83, 0.6);
 }
 
@@ -146,7 +187,7 @@
 }
 
 #simplicity img {
-  height: 450px;
+  height: 250px;
   padding: 30px 0;
 }
 
@@ -160,14 +201,14 @@
 }
 
 /* Background images */
-.secondary-banner#technology {
+#technology {
   background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('../../images/backgrounds/tech-banner.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-.secondary-banner#team {
+#team {
   background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('../../images/backgrounds/team-banner.jpg');
   background-size: cover;
   background-position: center;
