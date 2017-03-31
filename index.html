@@ -57,26 +57,25 @@
 
   <!-- NAVBAR -->
   <nav class="navbar-fixed" id="navbar" style="display:none">
-    <div class="navbar-container hidden-md-down">
-      <a id="home" href="#">
-        <img src="images/logos/wave-white.png" alt="MedEngine Logo">
-        <span>MedEngine</span>
-      </a>
-      <ul class="navigation">
-        <li><a id="toAbout" href="#about">about</a></li>
-        <li><a id="toInnovation" href="#innovation">innovation</a></li>
-        <li><a id="toSimplicity" href="#simplicity">simplicity</a></li>
-        <li><a id="toContact" href="#technology">technology</a></li>
-      </ul>
-      <ul class="navigation">
-        <li><a href="#">log in</a></li>
-        <li><a class="button-secondary" href="#">sign up</a></li>
-      </ul>
+    <div class="navbar-desktop hidden-md-down">
+      <div class="navbar-container">
+        <a id="home" href="#">
+          <img src="images/logos/wave-white.png" alt="MedEngine Logo">
+          <span>MedEngine</span>
+        </a>
+        <ul class="navigation">
+          <li><a id="toAbout" href="#about">about</a></li>
+          <li><a id="toInnovation" href="#innovation">innovation</a></li>
+          <li><a id="toSimplicity" href="#simplicity">simplicity</a></li>
+          <li><a id="toContact" href="#technology">technology</a></li>
+        </ul>
+        <ul class="navigation">
+          <li><a href="#">log in</a></li>
+          <li><a class="button-secondary" href="#">sign up</a></li>
+        </ul>
+      </div>
     </div>
     <div class="container navbar-mobile hidden-lg-up">
-      <a href="#">
-        <img src="images/logos/wave-white.png" alt="MedEngine Logo">
-      </a>
       <div class="dropdown">
         <i onclick="openMenu()" class="fa fa-bars fa-lg dropbtn"></i>
         <div id="dropdown" class="dropdown-content">
@@ -87,6 +86,7 @@
         </div>
       </div>
     </div>
+
   </nav>
 
   <!-- MAIN BANNER -->
@@ -179,6 +179,8 @@
           <p>
             <a href="#" class="button">Order Now</a>
           </p>
+        </div>
+        <div class="col">
           <img src="images/renderings/pcb.png" alt="MedEngine PCB" class="floating">
         </div>
       </div>
@@ -199,7 +201,7 @@
           <a href="">
             <p>
               Designed for maximum utility with large buttons and speech control throughout
-            <i class="fa fa-angle-right"></i>
+              <i class="fa fa-angle-right"></i>
             </p>
           </a>
         </div>

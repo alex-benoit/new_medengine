@@ -1,15 +1,16 @@
 /*  === NAVBAR ===  */
 .navbar-fixed {
-  display: flex;
-  height: 90px;
-  align-items: center;
-  justify-content: space-between;
   position: fixed;
   left: 0px;
   top: 0px;
   z-index: 3;
-  width: 100vw;
+}
+
+/* Navigation on Desktop */
+.navbar-desktop {
   background-color: #3D4351;
+  width: 100vw;
+  height: 90px;
 }
 
 .navbar-container {
@@ -17,6 +18,7 @@
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  height: 100%;
   width: 80%;
   display: flex;
   align-items: center;
@@ -24,7 +26,6 @@
   font-size: 14pt;
 }
 
-/* Navigation on Desktop */
 .navigation {
   list-style: none;
   margin: 0;
@@ -45,27 +46,22 @@
   margin-right: 5px;
 }
 
-.navbar-container a {
+.navbar-desktop a {
   text-decoration: none;
   display: block;
   padding: 10px;
   color: white;
-  font-weight:300;
-  text-decoration:none;
+  font-weight: 300;
+  text-decoration: none;
 }
 
-.navbar-container a:hover {
+.navbar-desktop a:hover {
   text-shadow: 0px 0px 8px rgba(255,255,255,0.9);
 }
 
 /* Navbar on Mobile */
 .navbar-mobile {
   width: 100vw;
-}
-
-.navbar-mobile img {
-  height: 35px;
-  margin: 4px 0;
 }
 
 .dropbtn {
@@ -87,6 +83,9 @@
   position: relative;
   display: inline-block;
   float: right;
+  background-color: #3D4351;
+  border-radius: 2px;
+  top: 14px;
 }
 
 .dropdown-content {
