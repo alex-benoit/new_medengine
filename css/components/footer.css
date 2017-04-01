@@ -1,11 +1,9 @@
 footer {
-  display: flex;
   height: 90px;
-  align-items: center;
-  justify-content: space-between;
   z-index: 3;
   width: 100vw;
   background-color: #3D4351;
+  color: #F9F9F9;
 }
 
 .footer-container {
@@ -14,8 +12,17 @@ footer {
   padding-left: 15px;
   padding-right: 15px;
   width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-footer{
-  color: white;
+footer a {
+  color: #F9F9F9;
+  transition: color 0.3 ease;
+}
+
+footer a:hover {
+  color: #BFC4C7;
 }
