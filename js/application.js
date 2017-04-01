@@ -1,87 +1,86 @@
 // NAVBAR DESIGN
 $(function(){
   $(window).scroll(function(e){
-    if ($(this).scrollTop() > $(window).height() - 90) {
+    if ($(this).scrollTop() >= $(window).height() - 90) {
       $('#navbar:hidden').slideDown();
     } else {
       $('#navbar:visible').slideUp();
     }
   });
 
-  if ($(this).scrollTop() > $(window).height() - 90) {
+  if ($(this).scrollTop() >= $(window).height() - 90) {
     $('#navbar:hidden').slideDown();
   } else {
     $('#navbar:visible').slideUp();
   }
 });
 
-// $(function(){
-//   var userHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-//   var startFade = userHeight - userHeight/2;
-//   var endFade = userHeight - 70;
-//   var $navbar = $('#navbar');
-//   var st = $(this).scrollTop();
-//   if ( st <= startFade ) {
-//     $navbar.css({ 'background' : 'rgba(28, 84, 156, 0.0)' });
-//   } else if ( st > startFade && st < endFade ) {
-//     var transparancy = ((st/endFade - startFade/endFade) / (1 - startFade/endFade));
-//     $navbar.css({ 'background' : `rgba(28, 84, 156, ${transparancy})` });
-//   } else {
-//     $navbar.css({ 'background' : 'rgba(28, 84, 156, 1)' });
-//   }
+// LINKS TO SECTIONS
+$(function(){
+  if ($(window).width() > 992) {
+    offsetScroll = 90
+  }
+  else {
+    offsetScroll = 0
+  }
 
-//   $(window).on('scroll', function() {
-//     var st = $(this).scrollTop();
-//     if ( st <= startFade ) {
-//       $navbar.css({ 'background' : 'rgba(28, 84, 156, 0.0)' });
-//     } else if ( st > startFade && st < endFade ) {
-//       var transparancy = ((st/endFade - startFade/endFade) / (1 - startFade/endFade));
-//       $navbar.css({ 'background' : `rgba(28, 84, 156, ${transparancy})` });
-//     } else {
-//       $navbar.css({ 'background' : 'rgba(28, 84, 156, 1)' });
-//     }
-//   });
-// });
+  // Logo in navbar
+  $('#navbar').on('click', '#home', function() {
+    event.preventDefault();
+    var targetOffset = $('#main').offset().top;
+    $("html, body").animate({scrollTop: targetOffset}, 500);
+  });
 
-// MENU LINKS TO SECTIONS
-// $(function(){
-//   $('#navbar').on('click', '#toAbout', function() {
-//     event.preventDefault();
-//     var targetOffset = $('#about').offset().top - 70;
-//     $("html, body").animate({scrollTop: targetOffset}, 500);
-//   });
+  // Navbar links
+  $('#navbar').on('click', '#toAbout', function() {
+    event.preventDefault();
+    var targetOffset = $('#about').offset().top - offsetScroll;
+    $("html, body").animate({scrollTop: targetOffset}, 500);
+  });
 
-//   // TODO
-//   $('#navbar').on('click', '#toResume', function() {
-//     event.preventDefault();
-//     var targetOffset = $('#resume').offset().top - 70;
-//     $("html, body").animate({scrollTop: targetOffset}, 500);
-//   });
+  $('#navbar').on('click', '#toInnovation', function() {
+    event.preventDefault();
+    var targetOffset = $('#innovation').offset().top - offsetScroll;
+    $("html, body").animate({scrollTop: targetOffset}, 500);
+  });
 
-//   $('#navbar').on('click', '#toWork', function() {
-//     event.preventDefault();
-//     var targetOffset = $('#work').offset().top - 70;
-//     $("html, body").animate({scrollTop: targetOffset}, 500);
-//   });
+  $('#navbar').on('click', '#toSimplicity', function() {
+    event.preventDefault();
+    var targetOffset = $('#simplicity').offset().top - offsetScroll;
+    $("html, body").animate({scrollTop: targetOffset}, 500);
+  });
 
-//   $('#navbar').on('click', '#toContact', function() {
-//     event.preventDefault();
-//     var targetOffset = $('#contact').offset().top - 70;
-//     $("html, body").animate({scrollTop: targetOffset}, 500);
-//   });
+  $('#navbar').on('click', '#toTechnology', function() {
+    event.preventDefault();
+    var targetOffset = $('#technology').offset().top - offsetScroll;
+    $("html, body").animate({scrollTop: targetOffset}, 500);
+  });
 
-//   $('#arrow-down-toAbout').on('click', function() {
-//     event.preventDefault();
-//     var targetOffset = $('#about').offset().top - 70;
-//     $("html, body").animate({scrollTop: targetOffset}, 500);
-//   });
+  $('#navbar').on('click', '#toSignUp', function() {
+    event.preventDefault();
+    var targetOffset = $('#signup').offset().top - offsetScroll;
+    $("html, body").animate({scrollTop: targetOffset}, 500);
+  });
 
-//   $('#button-toContact').on('click', function() {
-//     event.preventDefault();
-//     var targetOffset = $('#contact').offset().top - 70;
-//     $("html, body").animate({scrollTop: targetOffset}, 500);
-//   });
-// });
+  $('#button-toContact').on('click', function() {
+    event.preventDefault();
+    var targetOffset = $('#contact').offset().top - offsetScroll;
+    $("html, body").animate({scrollTop: targetOffset}, 500);
+  });
+
+  // More information in main
+  $('#moreInfo').on('click', function() {
+    event.preventDefault();
+    var targetOffset = $('#about').offset().top - offsetScroll;
+    $("html, body").animate({scrollTop: targetOffset}, 500);
+  });
+
+  $('#signupMain').on('click', function() {
+    event.preventDefault();
+    var targetOffset = $('#signup').offset().top - offsetScroll;
+    $("html, body").animate({scrollTop: targetOffset}, 500);
+  });
+});
 
 // MOBILE NAVBAR MENU
 function openMenu() {

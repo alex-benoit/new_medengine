@@ -67,11 +67,11 @@
           <li><a id="toAbout" href="#about">about</a></li>
           <li><a id="toInnovation" href="#innovation">innovation</a></li>
           <li><a id="toSimplicity" href="#simplicity">simplicity</a></li>
-          <li><a id="toContact" href="#technology">technology</a></li>
+          <li><a id="toTechnology" href="#technology">technology</a></li>
         </ul>
         <ul class="navigation">
           <li><a href="#">log in</a></li>
-          <li><a class="button-secondary" href="#">sign up</a></li>
+          <li><a class="button-secondary" id="toSignUp" href="#">sign up</a></li>
         </ul>
       </div>
     </div>
@@ -90,7 +90,7 @@
   </nav>
 
   <!-- MAIN BANNER -->
-  <section class="canvas-container">
+  <section class="canvas-container" id="main">
     <div class="main-banner container">
       <div class="row align-items-center">
         <div class="col-xs-12 col-md-5 text-center">
@@ -99,8 +99,8 @@
         <div class="col-xs-12 col-md-7">
           <h1 class="slideDown">Welcome to MedEngine</h1>
           <p class="slideDown">Putting the power of AI into the patient’s hands.</p>
-          <a href="#" class="button slideDown">Sign Up</a>
-          <a href="#" class="button-secondary slideDown">More Info <i class="fa fa-chevron-down"></i></a>
+          <a href="#" class="button slideDown" id="signupMain">Sign Up</a>
+          <a href="#" class="button-secondary slideDown" id="moreInfo">More Info <i class="fa fa-chevron-down"></i></a>
         </div>
       </div>
     </div>
@@ -298,10 +298,16 @@
   </section>
 
   <!-- FOOOTER -->
-  <footer>
-    <div class="footer-container">
-      <span>Copyright © 2017 MedEngine UG</span>
-      <span><a href="">Features</a> | <a href="">Pricing</a> | <a href="">Sign Up</a></span>
+  <footer class="footer-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <span>Copyright © 2017 MedEngine UG</span>
+        </div>
+        <div class="col-xs-12 col-md-6" style="text-align: right">
+          <span><a href="">Features</a> | <a href="">Pricing</a> | <a href="">Sign Up</a></span>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
