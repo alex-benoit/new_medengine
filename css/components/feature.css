@@ -17,8 +17,8 @@
 .feature-text h4 {
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 17px;
-  color: rgb(61, 67, 81);
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .feature-text p {

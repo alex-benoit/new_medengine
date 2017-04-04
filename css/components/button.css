@@ -1,32 +1,127 @@
 /* PRIMARY BUTTON */
 .button {
   color: white;
-  background-color: #0275D8;
-  border: 1px solid #0275D8;
-  border-radius: 2px;
-  transition: all .2s ease-in-out;
-  padding: .5rem 1rem;
+  background-color: #f39c12;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: transparent;
+  transition: all .5s ease-in-out;
+  padding: .5rem 2.5rem;
   text-decoration: none;
   display: inline-block;
-  line-height: 1.25;
+  line-height: 2;
 }
 
 .button:hover {
   cursor: pointer;
   text-decoration: none;
   color: white;
-  background-color: #1C549C;
-  border-color: #1C549C;
+  background-color: #f39c12;
+  border-color: #f39c12;
 }
 
 .button:active {
-  background-color: #1C549C;
-  border-color: #1C549C;
+  background-color: transparent;
+  border-color: #ffffff;
 }
 
 .button:focus {
   color: white;
-  box-shadow: 0 0 0 2px rgba(2,117,216,.5);
+  /*box-shadow: 0 0 0 2px rgba(2,117,216,.5);*/
+  outline: 0;
+  text-decoration: none;
+}
+
+
+.button-fill,
+.button-fill:focus,
+button-fill:active,
+button-fill:visited {
+    padding: .5rem 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    background: transparent;
+    transition: all .5s ease-in-out;
+}
+
+.button-fill:hover {
+    color: #f39c12;
+}
+
+.button-fill i {
+    font-size: 25px;
+    font-weight: 10px;
+    padding-left: 5px;
+    color: #f39c12;
+}
+
+.button-fill-standard,
+.button-fill-standard:focus,
+button-fill-standard:active,
+button-fill-standard:visited {
+    color: #fff;
+    margin-left: 0px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    background: transparent;
+    transition: all .5s ease-in-out;
+}
+
+.button-fill-standard:hover {
+    color: #f39c12;
+}
+
+.button-fill-standard i {
+    font-size: 15px;
+    font-weight: 10px;
+    padding-left: 5px;
+    color: #f39c12;
+}
+
+.btn-large {
+  padding: 15px 40px; }
+
+/* Alternative BUTTON */
+.button2 {
+  color: white;
+  background-color: #FF3E70;
+  border: 1px solid #FF3E70;
+  border-radius: 3px;
+  color: #FF3E70;
+  font-size: 15px;
+  font-weight: 500;
+  /*text-transform: uppercase;*/
+  background: transparent;
+  transition: all .5s ease-in-out;
+  padding: .5rem 2.5rem;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 2;
+}
+
+.button2:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  background-color: #FF3E70;
+  border-color: #FF3E70;
+}
+
+.button2:active {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+.button2:focus {
+  color: white;
+  /*box-shadow: 0 0 0 2px rgba(2,117,216,.5);*/
   outline: 0;
   text-decoration: none;
 }
@@ -37,6 +132,8 @@
   background-color: none;
   border: 1px solid #ccc;
   border-radius: 2px;
+  font-size: 15px;
+  font-weight: 500;
   transition: all .2s ease-in-out;
   padding: .5rem 1rem;
   text-decoration: none;
@@ -47,21 +144,22 @@
 .button-secondary:hover {
   cursor: pointer;
   text-decoration: none;
-  color: #222;
-  background-color: #E6E6E6;
+  color: white;
+  background-color: #FF3E70;
   border-color: #ADADAD;
 }
 
 .button-secondary:active {
-  color: #222;
-  background-color: #E6E6E6;
+  color: white;
+  background-color: transparent;
   border-color: #ADADAD;
 }
 
 .button-secondary:focus {
-  background-color: #E6E6E6;
-  color: #222;
+  background-color: transparent;
+  color: white;
   box-shadow: 0 0 0 2px rgba(204,204,204,.5);
   outline: 0;
   text-decoration: none;
 }
+

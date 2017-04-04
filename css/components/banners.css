@@ -1,5 +1,5 @@
 .secondary-banner {
-  min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 50px);
   padding: 35px 0;
 }
 
@@ -10,7 +10,7 @@
 /* General typography secondary banner */
 .secondary-banner h2 {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 30px;
   line-height: 37px;
   position: relative;
@@ -20,7 +20,7 @@
 .secondary-banner h2::after {
   content: "";
   position: absolute;
-  background: #FF3E70;
+  background: #f39c12;
   width: 100px;
   height: 1px;
   bottom: -10px;
@@ -28,6 +28,7 @@
 
 .secondary-banner p {
   font-size: 15px;
+  font-weight: 100;
   line-height: 28px;
   margin-bottom: 10px;
 }
@@ -44,7 +45,8 @@
 }
 
 #about h2 {
-  color: rgb(61, 67, 81);
+  color: rgba(0, 0, 0, 0.6);
+;
 }
 
 #about h2::after {
@@ -53,52 +55,68 @@
 }
 
 #about p {
-  color: rgba(28, 54, 83, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
-/* Specific typography INNOVATION banner */
-#innovation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#innovation h2 {
-  color: rgb(61, 67, 81);
-}
-
-#innovation h2::after {
-  left: 0;
-}
-
-#innovation p {
-  color: rgba(28, 54, 83, 0.6);
-}
 
 /* Specific typography SIMPLICITY banner */
 #simplicity {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #FF3E70;
+
 }
 
 #simplicity h2 {
-  color: rgb(61, 67, 81);
+  color: #ffffff;
 }
 
 #simplicity h2::after {
   left: 0;
+  content: "";
+  position: absolute;
+  background: #f39c12;
+  width: 100px;
+  height: 1px;
+  bottom: -10px;
 }
 
 #simplicity p {
-  color: rgba(28, 54, 83, 0.6);
+  color: #ffffff;
 }
+
+
+/* Specific typography INNOVATION banner */
+#innovation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  /*background: linear-gradient(to right, #FF3E70 , #BB377D)*/;
+}
+
+#innovation h2 {
+  color: rgba(0, 0, 0, 0.6) ;
+}
+
+#innovation h2::after {
+  left: 0;
+      background: #f39c12;
+
+}
+
+#innovation p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 
 /* Specific typography TECHNOLOGY banner */
 #technology {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #f39c12;
 }
 
 #technology h2 {
@@ -108,10 +126,16 @@
 #technology h2::after {
   left: 50%;
   transform: translateX(-50%);
+  content: "";
+  position: absolute;
+  background: #f39c12;
+  width: 100px;
+  height: 1px;
+  bottom: -10px;
 }
 
 #technology p {
-  color: rgba(220, 220, 220, 0.8);
+  color: #ffffff;
 }
 
 /* Specific typography FEATURES banner */
@@ -128,6 +152,7 @@
 #features h2::after {
   left: 50%;
   transform: translateX(-50%);
+  background: #FF3E70;
 }
 
 #features p {
@@ -156,7 +181,7 @@
   color: rgba(220, 220, 220, 0.8);
 }
 
-#team .team-containe {
+#team .team-container {
   height: ;
 }
 
@@ -174,6 +199,7 @@
 #signup h2::after {
   left: 50%;
   transform: translateX(-50%);
+  background: #FF3E70;
 }
 
 #signup p {
@@ -181,13 +207,13 @@
 }
 
 /* Images */
-#innovation img#duo {
-  height: 450px;
+#simplicity img {
+  height: 300px;
   padding: 30px 0;
 }
 
-#simplicity img {
-  height: 250px;
+#innovation img {
+  width: 80%;
   padding: 30px 0;
 }
 
@@ -201,6 +227,13 @@
 }
 
 /* Background images */
+#simplicity {
+  background-image: url('../../images/backgrounds/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: local;
+}
+
 #technology {
   background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('../../images/backgrounds/tech-banner.jpg');
   background-size: cover;

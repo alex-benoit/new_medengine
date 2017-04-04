@@ -67,21 +67,29 @@
 }
 
 #signup .signup-form .form-input-group input::-webkit-input-placeholder {
-  font-family: "Open Sans", "Helvetica", "sans-serif";
+  font-family: "Open Sans", "Montserrat", "sans-serif";
   color: #BCC1C3;
+      font-size: 15px;
+
 }
 
 #signup .signup-form .form-input-group input:-moz-placeholder {
-  font-family: "Open Sans", "Helvetica", "sans-serif";
+  font-family: "Open Sans", "Montserrat", "sans-serif";
   color: #BCC1C3;
+      font-size: 15px;
+
 }
 
 #signup .signup-form .form-input-group input::-moz-placeholder {
-  font-family: "Open Sans", "Helvetica", "sans-serif";
+  font-family: "Open Sans", "Montserrat", "sans-serif";
   color: #BCC1C3;
+      font-size: 15px;
+
 }
 
 #signup .signup-form .form-input-group input:-ms-input-placeholder {
-  font-family: "Open Sans", "Helvetica", "sans-serif";
+  font-family: "Open Sans", "Montserrat", "sans-serif";
   color: #BCC1C3;
+      font-size: 15px;
+
 }

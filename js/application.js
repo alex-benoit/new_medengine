@@ -18,7 +18,7 @@ $(function(){
 // LINKS TO SECTIONS
 $(function(){
   if ($(window).width() > 992) {
-    offsetScroll = 90
+    offsetScroll = 50
   }
   else {
     offsetScroll = 0
@@ -78,6 +78,12 @@ $(function(){
   $('#signupMain').on('click', function() {
     event.preventDefault();
     var targetOffset = $('#signup').offset().top - offsetScroll;
+    $("html, body").animate({scrollTop: targetOffset}, 500);
+  });
+
+  $('#moreInfoArrow').on('click', function() {
+    event.preventDefault();
+    var targetOffset = $('#about').offset().top - offsetScroll;
     $("html, body").animate({scrollTop: targetOffset}, 500);
   });
 });

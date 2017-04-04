@@ -8,9 +8,10 @@
 
 /* Navigation on Desktop */
 .navbar-desktop {
-  background-color: #3D4351;
+  background-color:  #FF3E70;
+    opacity: 1;
   width: 100vw;
-  height: 90px;
+  height: 50px;
 }
 
 .navbar-container {
@@ -23,7 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 14pt;
+  font-size: 14px;
 }
 
 .navigation {
@@ -76,14 +77,14 @@
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #264D6E;
+  background-color:  #FF3E70;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
   float: right;
-  background-color: #3D4351;
+  background-color:  #FF3E70;
   border-radius: 2px;
   top: 14px;
 }

@@ -22,7 +22,9 @@
   <meta property="profile:last_name" content=""> -->
 
   <!-- Font -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Open+Sans:300i,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
@@ -53,8 +55,8 @@
   <meta name="msapplication-TileImage" content="icons/favicons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 </head>
-<body>
 
+<body>
   <!-- NAVBAR -->
   <nav class="navbar-fixed" id="navbar" style="display:none">
     <div class="navbar-desktop hidden-md-down">
@@ -64,10 +66,10 @@
           <span>MedEngine</span>
         </a>
         <ul class="navigation">
-          <li><a id="toAbout" href="#about">about</a></li>
-          <li><a id="toInnovation" href="#innovation">innovation</a></li>
-          <li><a id="toSimplicity" href="#simplicity">simplicity</a></li>
-          <li><a id="toTechnology" href="#technology">technology</a></li>
+          <li><a id="toAbout" href="#about">About</a></li>
+          <li><a id="toInnovation" href="#innovation">Innovation</a></li>
+          <li><a id="toSimplicity" href="#simplicity">Simplicity</a></li>
+          <li><a id="toTechnology" href="#technology">Technology</a></li>
         </ul>
         <ul class="navigation">
           <li><a href="#">log in</a></li>
@@ -79,10 +81,10 @@
       <div class="dropdown">
         <i onclick="openMenu()" class="fa fa-bars fa-lg dropbtn"></i>
         <div id="dropdown" class="dropdown-content">
-          <a id="toAbout" href="#about">about</a>
-          <a id="toInnovation" href="#innovation">innovation</a>
-          <a id="toSimplicity" href="#simplicity">simplicity</a>
-          <a id="toTechnology" href="#technology">technology</a>
+          <a id="toAbout" href="#about">About</a>
+          <a id="toInnovation" href="#innovation">Innovation</a>
+          <a id="toSimplicity" href="#simplicity">Simplicity</a>
+          <a id="toTechnology" href="#technology">Technology</a>
         </div>
       </div>
     </div>
@@ -96,14 +98,17 @@
         <div class="col-xs-12 col-md-5 text-center">
           <img class="slideDown" src="images/logos/wave-white.png" alt="MedEngine Logo">
         </div>
-        <div class="col-xs-12 col-md-7">
-          <h1 class="slideDown">Welcome to MedEngine</h1>
-          <p class="slideDown">Putting the power of AI into the patient’s hands.</p>
-          <a href="#" class="button slideDown" id="signupMain">Sign Up</a>
-          <a href="#" class="button-secondary slideDown" id="moreInfo">More Info <i class="fa fa-chevron-down"></i></a>
+        <div class="col-xs-12 col-md-7 slideDown">
+          <h1>Welcome to MedEngine</h1>
+          <p>Putting the power of AI into the patient’s hands.</p>
+          <div class="main-ctas">
+            <a href="#" class="button" id="signupMain">Sign Up</a>
+            <a href="#" class="button-fill" id="moreInfo">More Info <i class="fa fa-angle-down"></i></a>
+          </div>
         </div>
       </div>
     </div>
+    <a href="#" class="down-arrow floating-arrow" id="moreInfoArrow"><i class="fa fa-angle-down"></i></a>
     <canvas height="180" id="graph"></canvas>
   </section>
 
@@ -117,12 +122,28 @@
     </div>
   </section>
 
+  <!-- SIMPLICITY BANNER -->
+  <section class="secondary-banner" id="simplicity">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 offset-md-1">
+          <h2>Simplicity</h2>
+          <p>As a Parkinson's patient, we believe you should not burden yourself with unneccesary features. We do not believe in producing yet another healthcare gadget. Our device is the most elegantly designed and easy to use medical device you will ever encounter.</p>
+          <a href="#" class="button-fill-standard" id="moreInfo">More Info <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div class="col-xs-12 col-md-5 text-center">
+          <img src="images/screenshots/duo.png" alt="MedEngine Screenshots" id="duo">
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- INNOVATION BANNER -->
   <section class="secondary-banner bg-grey" id="innovation">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-xs-12 col-md-6 text-center">
-          <img src="images/screenshots/duo.png" alt="MedEngine Screenshots" id="duo" class="floating">
+          <img src="images/screenshots/macbook_grey.png" alt="MedEngine Desktop Screenshot" id="macbook">
         </div>
         <div class="col-xs-12 col-md-6">
           <h2>Innovation</h2>
@@ -153,22 +174,6 @@
     </div>
   </section>
 
-  <!-- SIMPLICITY BANNER -->
-  <section class="secondary-banner" id="simplicity">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-6 offset-md-1">
-          <h2>Simplicity</h2>
-          <p>As a Parkinson's patient, we believe you should not burden yourself with unneccesary features. We do not believe in producing yet another healthcare gadget. Our device is the most elegantly designed and easy to use medical device you will ever encounter.</p>
-          <a href="#" class="button">Specifications</a>
-        </div>
-        <div class="col-xs-12 col-md-5 text-center">
-          <img src="images/renderings/wristband.png" alt="MedEngine Wristband" class="floating">
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- TECHNOLOGY BANNER -->
   <section class="secondary-banner" id="technology">
     <div class="container">
@@ -179,7 +184,7 @@
           <p>
             <a href="#" class="button">Order Now</a>
           </p>
-          <img src="images/renderings/pcb.png" alt="MedEngine PCB" class="floating">
+          <img src="images/renderings/wristband.png" alt="MedEngine Wristband" class="floating">
         </div>
       </div>
     </div>
@@ -192,13 +197,26 @@
       <div class="row">
         <div class="col-xs-12 col-md-4">
           <div class="feature-header">
-            <h4>Track your Condition</h4>
-            <p>Track your PD symptoms in a convenient and reliable way</p>
+            <h4>Tracking</h4>
+            <p>Conveniently track your symptoms and progress.</p>
           </div>
           <img src="images/screenshots/month.png" alt="">
           <a href="">
             <p>
-              Designed for maximum utility with large buttons and speech control throughout
+              Witness your progress and improvement
+              <i class="fa fa-angle-right"></i>
+            </p>
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="feature-header">
+            <h4>Usability</h4>
+            <p>Designed for intuitive usage.</p>
+          </div>
+          <img src="images/screenshots/home.png" alt="">
+          <a href="#">
+            <p>
+              We feature speech control throughout
               <i class="fa fa-angle-right"></i>
             </p>
           </a>
@@ -206,32 +224,18 @@
         <div class="col-xs-12 col-md-4">
           <div class="feature-header">
             <h4>Planning</h4>
-            <p>Helps you to plan and achieve your symptom free time</p>
-          </div>
-          <img src="images/screenshots/home.png" alt="">
-          <a href="#">
-            <p>
-              Easily track the progression of many of your symptoms
-              <i class="fa fa-angle-right"></i>
-            </p>
-          </a>
-        </div>
-        <div class="col-xs-12 col-md-4">
-          <div class="feature-header">
-            <h4>Precise Data</h4>
-            <p>New research opportunities and insights</p>
+            <p>Easily manage your symptoms.</p>
           </div>
           <img src="images/screenshots/calendar.png" alt="">
           <a href="#">
             <p>
-              TremorTab helps you plan your day and suggests acivities to minimise your symptoms
+              Plan your day and minimise symptoms
               <i class="fa fa-angle-right"></i>
             </p>
           </a>
         </div>
       </div>
-      <a class="button" href="#">More Features</a>
-    </div>
+<a href="#" class="button2 button-signup">More Features</a>    </div>
   </section>
 
   <!-- TEAM BANNER -->
@@ -242,32 +246,32 @@
           <li>
             <img src="images/team/philipp.png" alt="Philipp Brunnbauer">
             <h2>Philipp Brunnbauer</h2>
-            <h4>Founder. Circuit Design. Berlin.</h4>
-            <p>Master Thesis: “In Vivo Cancer Detection with a Surgical Instrument & App”.</p>
+            <h4>Founder. CEO. Berlin.</h4>
+            <p>Hardware. Biocompatibility. Clinical Integration.</p>
           </li>
           <li>
             <img src="images/team/chris.png" alt="Christian Mellor">
             <h2>Christian Mellor</h2>
-            <h4>Founder. Software Engineering. London.</h4>
-            <p>Master Thesis: “Real Time Tremor Monitoring Device and Accompanying App”.</p>
+            <h4>Founder. CEO. London.</h4>
+            <p>Software. Cloud Infrastructure. Distributed Services.</p>
           </li>
           <li>
             <img src="images/team/james.png" alt="James Smith">
             <h2>James Smith</h2>
-            <h4>Founder. Operations. London.</h4>
-            <p>Master Thesis: “A Simple to use Device for Hand Rehabilitation”.</p>
+            <h4>Co-Founder. Operations. London.</h4>
+            <p>Software Engineering. Technical Support.</p>
           </li>
           <li>
             <img src="images/team/bruno.png" alt="Bruno Scalzo">
             <h2>Bruno Scalzo</h2>
-            <h4>Founder. Data Analytics. London.</h4>
-            <p>PhD Thesis: “Adaptive Statistical Signal Processing for Financial Applications”.</p>
+            <h4>Co-Founder. Data Analytics. London.</h4>
+            <p>Real Time Signal Analysis. Financial Modelling.</p>
           </li>
           <li>
             <img src="images/team/gillian.png" alt="Gillian Koehl">
             <h2>Gillian Koehl</h2>
-            <h4>Founder. Business Development. London.</h4>
-            <p>Master Thesis: “Detection of Analytes in Blood using Molecularly Imprinted Polymers”.</p>
+            <h4>Co-Founder. Business Development. London.</h4>
+            <p>Customer Led Design. Marketing.</p>
           </li>
         </ul>
       </div>
@@ -289,7 +293,7 @@
               <div class="form-input-group">
                 <i class="fa fa-lock"></i><input type="text" placeholder="Enter your password" required>
               </div>
-              <a class="button-secondary button-signup">Sign up for free</a>
+                <a href="#" class="button2 button-signup">Sign up for free</a>
             </form>
           </div>
         </div>
@@ -301,8 +305,8 @@
   <footer class="footer-container">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <span>Copyright © 2017 MedEngine UG</span>
+        <div class="col-xs-12 col-md-6" style="text-align: left">
+          <span><a href="">Copyright © 2017 MedEngine UG</a></span>
         </div>
         <div class="col-xs-12 col-md-6" style="text-align: right">
           <span><a href="">Features</a> | <a href="">Pricing</a> | <a href="">Sign Up</a></span>
@@ -310,5 +314,33 @@
       </div>
     </div>
   </footer>
+
+
+
+
+    <script>
+//this is where we apply opacity to the arrow
+$(window).scroll( function(){
+
+  //get scroll position
+  var topWindow = $(window).scrollTop();
+  //multipl by 1.5 so the arrow will become transparent half-way up the page
+  var topWindow = topWindow * 1.5;
+
+  //get height of window
+  var windowHeight = $(window).height();
+
+  //set position as percentage of how far the user has scrolled
+  var position = topWindow / windowHeight;
+  //invert the percentage
+  position = 1 - position;
+
+  //define arrow opacity as based on how far up the page the user has scrolled
+  //no scrolling = 1, half-way up the page = 0
+  $('.down-arrow').css('opacity', position);
+
+});
+</script>
+
 </body>
 </html>

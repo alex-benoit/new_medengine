@@ -2,10 +2,11 @@ footer {
   height: 90px;
   z-index: 3;
   width: 100vw;
-  background-color: #3D4351;
+  background-color: #FF3E70;
   color: #F9F9F9;
   display: flex;
   align-items: center;
+  font-size: 14px;
 }
 
 footer a {
@@ -14,5 +15,6 @@ footer a {
 }
 
 footer a:hover {
-  color: #BFC4C7;
+  color: #F9F9F9;
+  text-shadow: 0px 0px 8px rgba(255,255,255,0.9);
 }
